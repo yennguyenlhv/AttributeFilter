@@ -10,7 +10,7 @@ import {
     quarterDateIdentifier,
     yearDateDataSetAttributeIdentifier,
     projectId,
-} from "../../src/components/utils/fixtures.js";
+} from "./utils/fixtures.js";
 
 export class PPComparition extends Component {
     onLoadingChanged(...params) {

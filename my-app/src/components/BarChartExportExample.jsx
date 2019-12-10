@@ -5,7 +5,12 @@ import { BarChart, Model } from "@gooddata/react-components";
 import "@gooddata/react-components/styles/css/main.css";
 
 import ExampleWithExport from "./utils/ExampleWithExport";
-import { dateDataSetUri, locationResortIdentifier, projectId, totalSalesIdentifier } from "../../src/components/utils/fixtures.js";
+import {
+    dateDataSetUri,
+    locationResortIdentifier,
+    projectId,
+    totalSalesIdentifier,
+} from "./utils/fixtures.js";
 
 const amount = Model.measure(totalSalesIdentifier)
     .format("#,##0")
