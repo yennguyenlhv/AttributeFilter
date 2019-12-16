@@ -9,7 +9,7 @@ import {
     totalSalesIdentifier,
     menuCategoryAttributeDFUri,
 } from "./utils/fixtures.js";
-
+const menuCategory = Model.attribute(menuCategoryAttributeDFIdentifier).alias("example");
 export class AttributeFilterExample extends Component {
     constructor(props) {
         super(props);
@@ -49,7 +49,6 @@ export class AttributeFilterExample extends Component {
         console.info("AttributeFilterExample onLoadingChanged", ...params);
     }
     render() {
-        const menuCategory = Model.attribute(menuCategoryAttributeDFIdentifier);
         const totalSales = Model.measure(totalSalesIdentifier)
             .format("#,##0")
             .alias("$ Total Sales");
